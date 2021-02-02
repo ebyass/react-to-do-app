@@ -14,15 +14,15 @@ function Task({ task }) {
 function Todo() {
   const [tasks, setTasks] = useState([
     {
-      title: "Grab some Pizza",
+      title: "Walk the dog",
       completed: true,
     },
     {
-      title: "Do your workout",
+      title: "Yoga practice",
       completed: true,
     },
     {
-      title: "Hangout with friends",
+      title: "Practice Spanish",
       completed: false,
     },
   ]);
