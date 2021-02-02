@@ -3,6 +3,7 @@ import "./Todo.css";
 
 function CreateTask({addTask}) {
 	const [value, setValue] = useState("")
+	//! using useState here, the component registers a state, value and a function for updating it (setValue)
 
 	const handleSubmit = e => {
 		e.preventDefault()
