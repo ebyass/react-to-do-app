@@ -1,6 +1,6 @@
 # react-to-do-app
 
-# Practiced:
+# Practice using:
 
 ## React Hooks
 ## useState() to manage state in a functional component 
