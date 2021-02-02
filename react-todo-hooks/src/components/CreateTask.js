@@ -24,3 +24,5 @@ function CreateTask({addTask}) {
 		</form>
 	)
 }
+
+export default CreateTask

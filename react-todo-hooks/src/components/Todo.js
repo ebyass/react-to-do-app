@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Todo.css";
+import CreateTask from "../Components/CreateTask"
 
 function Task({ task }) {
   return (
@@ -25,15 +26,27 @@ function Todo() {
       title: "Practice Spanish",
       completed: false,
     },
-  ]);
+	]);
+	
+	const addTask = title => {
+		const newTasks = [ ...tasks, { title, completed: false}]
+		setTasks(newTasks)
+	}
+
   return (
     <div className="todo-container">
       <div className="header">TODO - ITEMS</div>
       <div className="tasks">
         {tasks.map((task, index) => (
-          <Task task={task} index={index} key={index} />
+					<Task 
+					task={task} 
+					index={index} 
+					key={index} />
         ))}
       </div>
+			<div className="create-task">
+				<CreateTask addTask={addTask} />
+			</div>
     </div>
   );
 }
